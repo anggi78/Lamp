@@ -14,10 +14,17 @@
     position: relative;
 }
 
-nav{
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1d2026;
+    z-index: 999;
     display: flex;
     align-items: center;
-    padding: 20px 8%;
+    padding: 35px 8%;
+    border-bottom: 1px solid #373e4b;
 }
 
 nav .menu-img{
@@ -47,6 +54,11 @@ nav ul li a{
     color: #fff;
 }
 
+nav ul li a:hover{
+    color: #00986f;
+    transition: all 0.3s ease;
+}
+
 button{
     background: #efefef;
     height: 30px;
@@ -70,7 +82,7 @@ button span{
 
 .lamp-container{
    position: absolute;
-   top: -20px; 
+   top: -30px; 
    left: 22%;
    width: 200px;
 }
@@ -94,6 +106,7 @@ button span{
     max-width: 600px;
     margin-top: 7%;
     margin-left: 50%;
+    padding: 90px 10px;
 }
 
 .text-container h1{
